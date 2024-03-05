@@ -1,10 +1,11 @@
-# TodoMVC: React
+# TodoMVC: React + Launch Darkly SDK
 
 ## Description
 
-This application uses React 17.0.2 to implement a todo application.
+This application uses React 17.0.2 to implement a todo application and implements Launch Darkly to use feature flags for deploying changes.
 
 -   [React](https://reactjs.org/) is a JavaScript library for creating user interfaces.
+-   [Launch Darkly](https://docs.launchdarkly.com/) is a SAAS for developers to manage feature flags/toggles
 
 ## Implementation details
 
@@ -34,6 +35,8 @@ The only requirement is an installation of Node, to be able to install dependenc
 ```
 
 ## Local preview
+
+* Replace CLIENT_SIDE_ID in app.jsx file with the client side id provided by Launch Darkly
 
 ```
 terminal:
