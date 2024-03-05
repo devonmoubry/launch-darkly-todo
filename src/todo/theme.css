@@ -1,0 +1,23 @@
+:root {
+  --todo-theme-color: blue;
+}
+
+.todoapp .new-theme {
+  --focus-outline: 0 0 2px 2px var(--todo-theme-color);
+
+  h1,
+  .filters li a.selected {
+    color: var(--todo-theme-color);
+  }
+
+  input:focus,
+  .toggle:focus + label,
+  .toggle-all:focus + label {
+    box-shadow: var(--focus-outline);
+  }
+
+  .filters li a.selected,
+  .filters li a:hover {
+    border-color: var(--todo-theme-color);
+  }
+}
